@@ -51,16 +51,16 @@ if st.session_state["authentication_status"]:
     # Gestion des pages
     if main_menu == "🏠 Accueil":
         st.title("Bienvenue sur ma page")
-        st.image("/Users/happy/Documents/Data_Engeneer-Chef_de_projet_IA/semaine_5/Quetes/Streamlit_partie_3/mamie_folle.jpg")
+        st.image("mamie_folle.jpg")
     elif main_menu == "📸 Les photos de mon chat":
         st.title("Bienvenue dans l'album de mon chat 🐱")
         col1, col2, col3 = st.columns(3)
         with col1:
-            st.image("/Users/happy/Documents/Data_Engeneer-Chef_de_projet_IA/semaine_5/Quetes/Streamlit_partie_3/Chat1.jpg")
+            st.image("Chat1.jpg")
         with col2:
-            st.image("/Users/happy/Documents/Data_Engeneer-Chef_de_projet_IA/semaine_5/Quetes/Streamlit_partie_3/chat2.jpg")
+            st.image("chat2.jpg")
         with col3:
-            st.image("/Users/happy/Documents/Data_Engeneer-Chef_de_projet_IA/semaine_5/Quetes/Streamlit_partie_3/chat3.jpg")
+            st.image("chat3.jpg")
 
 elif st.session_state["authentication_status"] is False:
     st.error("Nom d'utilisateur ou mot de passe incorrect.")
